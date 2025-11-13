@@ -67,10 +67,10 @@ setInterval(async () => {
           .setColor(0x000000)
           .setThumbnail("https://cdn.discordapp.com/emojis/1438177965962690732.gif") // thumbnail animat
           .setDescription(
-            `-- <a:63804crownblack:1438178018144161842> **NEXUS BOT** <a:63804crownblack:1438178018144161842> --\n\n` +
-            `<a:590203blackverified:1438178217247768699> STATUS: ${currentStatus}\n` +
-            `<a:5228_Seta:1438177992168968343> RESPONSE CODE: ${res.status}\n` +
-            `<a:5228_Seta:1438177992168968343> RESPONSE TIME: ${ping ? ping + "ms" : "N/A"}`
+            `-- <a:63804crownblack:1438520914907238430> **NEXUS BOT** <a:63804crownblack:1438520914907238430> --\n\n` +
+            `<a:590203blackverified:1438521037338705971> STATUS: ${currentStatus}\n` +
+            `<a:5528_seta:1438520963552772276> RESPONSE CODE: ${res.status}\n` +
+            `<a:5528_seta:1438520963552772276> RESPONSE TIME: ${ping ? ping + "ms" : "N/A"}`
           )
           .setImage("https://i.imgur.com/YlCEaYF.gif")
           .setFooter({ text: "NEXUS Site Monitor" });
@@ -107,19 +107,19 @@ client.on("messageCreate", async (message) => {
         .setColor(0x000000)
         .setThumbnail(targetUser.displayAvatarURL({ dynamic: true })) // <<< thumbnail schimbat
         .setDescription(
-          `-- <a:63804crownblack:1438178018144161842> NEXUS BOT <a:63804crownblack:1438178018144161842> --\n\n` +
-          `<a:5228_Seta:1438177992168968343> **User:** ${userName}\n\n` +
-          `<a:5228_Seta:1438177992168968343> **TOTAL STATS:**\n` +
+          `-- <a:63804crownblack:1438520914907238430> **NEXUS BOT** <a:63804crownblack:1438520914907238430> --\n\n` +
+          `<a:5528_seta:1438520963552772276> **User:** ${userName}\n\n` +
+          `<a:5528_seta:1438520963552772276> **TOTAL STATS:**\n` +
           `Hits: ${formatNumber(normal.Totals?.Accounts)}\n` +
           `Summary: ${formatNumber(normal.Totals?.Summary)}\n` +
           `RAP: ${formatNumber(normal.Totals?.Rap)}\n\n` +
           `──────\n\n` +
-          `<a:5228_Seta:1438177992168968343> **BIGGEST HIT:**\n` +
+          `<a:5528_seta:1438520963552772276> **BIGGEST HIT:**\n` +
           `Robux: ${formatNumber(normal.Highest?.Balance)}\n` +
           `Summary: ${formatNumber(normal.Highest?.Summary)}\n` +
           `RAP: ${formatNumber(normal.Highest?.Rap)}\n\n` +
           `──────\n\n` +
-          `<a:5228_Seta:1438177992168968343> **TOTAL HIT STATS:**\n` +
+          `<a:5528_seta:1438520963552772276> **TOTAL HIT STATS:**\n` +
           `Summary: ${formatNumber(normal.Totals?.Summary)}\n` +
           `RAP: ${formatNumber(normal.Totals?.Rap)}\n` +
           `Robux: ${formatNumber(normal.Totals?.Balance)}`
@@ -149,19 +149,19 @@ client.on("messageCreate", async (message) => {
         .setColor(0x000000)
         .setThumbnail(targetUser.displayAvatarURL({ dynamic: true })) // <<< thumbnail schimbat
         .setDescription(
-          `-- <a:63804crownblack:1438178018144161842> NEXUS BOT <a:63804crownblack:1438178018144161842> --\n\n` +
-          `<a:5228_Seta:1438177992168968343> **User:** ${userName}\n\n` +
-          `<a:5228_Seta:1438177992168968343> **DAILY STATS:**\n` +
+          `-- <a:63804crownblack:1438520914907238430> **NEXUS** BOT <a:63804crownblack:1438520914907238430> --\n\n` +
+          `<a:5528_seta:1438520963552772276> **User:** ${userName}\n\n` +
+          `<a:5528_seta:1438520963552772276> **DAILY STATS:**\n` +
           `Hits: ${formatNumber(daily.Totals?.Accounts)}\n` +
           `Summary: ${formatNumber(daily.Totals?.Summary)}\n` +
           `RAP: ${formatNumber(daily.Totals?.Rap)}\n\n` +
           `──────\n\n` +
-          `<a:5228_Seta:1438177992168968343> **BIGGEST HIT:**\n` +
+          `<a:5528_seta:1438520963552772276> **BIGGEST HIT:**\n` +
           `Robux: ${formatNumber(daily.Highest?.Balance)}\n` +
           `Summary: ${formatNumber(daily.Highest?.Summary)}\n` +
           `RAP: ${formatNumber(daily.Highest?.Rap)}\n\n` +
           `──────\n\n` +
-          `<a:5228_Seta:1438177992168968343> **TOTAL HIT STATS:**\n` +
+          `<a:5528_seta:1438520963552772276> **TOTAL HIT STATS:**\n` +
           `Summary: ${formatNumber(daily.Totals?.Summary)}\n` +
           `RAP: ${formatNumber(daily.Totals?.Rap)}\n` +
           `Robux: ${formatNumber(daily.Totals?.Balance)}`
@@ -201,12 +201,12 @@ client.on("messageCreate", async (message) => {
         .setColor(0x000000)
         .setThumbnail("https://cdn.discordapp.com/emojis/1438177965962690732.gif") // thumbnail animat
         .setDescription(
-          `-- <a:63804crownblack:1438178018144161842> NEXUS BOT <a:63804crownblack:1438178018144161842> --\n\n` +
-          `<a:5228_Seta:1438177992168968343> **${MAIN_SITE_NAME}**\n` +
-          `<a:590203blackverified:1438178217247768699> STATUS: ${statusText}\n` +
-          `<a:5228_Seta:1438177992168968343> RESPONSE CODE: ${res.status}\n` +
-          `<a:5228_Seta:1438177992168968343> UPTIME: ${uptimeText}\n` +
-          `<a:5228_Seta:1438177992168968343> RESPONSE TIME: ${ping ? ping + "ms" : "N/A"}`
+          `-- <a:63804crownblack:1438520914907238430> **NEXUS BOT** <a:63804crownblack:1438520914907238430> --\n\n` +
+          `<a:5528_seta:1438520963552772276> **${MAIN_SITE_NAME}**\n` +
+          `<a:590203blackverified:1438521037338705971> STATUS: ${statusText}\n` +
+          `<a:5528_seta:1438520963552772276> RESPONSE CODE: ${res.status}\n` +
+          `<a:5528_seta:1438520963552772276> UPTIME: ${uptimeText}\n` +
+          `<a:5528_seta:1438520963552772276> RESPONSE TIME: ${ping ? ping + "ms" : "N/A"}`
         )
         .setImage("https://i.imgur.com/YlCEaYF.gif")
         .setFooter({ text: "NEXUS Site Monitor" });
